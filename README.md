@@ -29,18 +29,22 @@ This will be akin to the Web API that you built in the last sprint, only this ti
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. Explain the difference between `RDBMS` and `SQL`.
+RDBMS (Relational Database Management Systems) is the database software used to manage storage by creating, querying, updating, deleting, etc that uses table's rows to store records and table's columns to keep track of properties. Some example of RDBMS are: Oracle Database, MySQL, Microsoft SQL Server, and IBM DB2. While SQL (Structured Query Languange), is the standard language used to communicate to the database in a RDBMS.
 1. Why do tables need a `primary key`?
+to identify a column or a set of columns in a table that can uniquely point to a record in a table.
 1. What is the name given to a table column that references the primary key on another table.
+a foreign key.
 1. What do we need in order to have a _many to many_ relationship between two tables.
+an intermediary table that has foreign keys that refer to the primary keys of each tables that it bridge and uses both foreign keys as a combined primary key.
 
 ## Project Set Up
 
 Follow these steps for starting your project.
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
