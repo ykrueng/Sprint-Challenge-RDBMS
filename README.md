@@ -115,7 +115,7 @@ Add the remaining CRUD operations for projects and actions.
 
 [x] A `context` can be applied to more than one `action`. An action can be tied to more than one context, like in the example above.
 
-When retrieving an `action` by _id_, add a property that lists all the `contexts` related to that action.
+[x] When retrieving an `action` by _id_, add a property that lists all the `contexts` related to that action.
 
 **Remember to run `npm init -y` to generate a _package.json_ before adding your dependencies.**
 
