@@ -1,10 +1,13 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable("action_context", t => {
-    t.integer("action_id")
+      t.integer("action_id")
       .unsigned()
-      .notNullable()
+      .notNullable();
+
+    t.foreign("action_id")
       .references("id")
-      .inTable("actions");
+      .inTable("actions")
+      .onDelete("CASCADE");
 
     t.integer("context_id")
       .unsigned()

@@ -16,9 +16,12 @@ exports.up = function(knex, Promise) {
 
     t.integer("project_id")
       .unsigned()
-      .notNullable()
+      .notNullable();
+
+    t.foreign("project_id")
       .references("id")
-      .inTable("projects");
+      .inTable("projects")
+      .onDelete("CASCADE");
   });
 };
 
